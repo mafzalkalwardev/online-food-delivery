@@ -41,6 +41,10 @@ app.get("/payment", (req, res) => {
     res.send("Payment Module Active");
 });
 
+app.get("/health", (req, res) => {
+    res.json({ status: "ok" });
+});
+
 app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT}`);
 });
