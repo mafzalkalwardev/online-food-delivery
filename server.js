@@ -41,8 +41,8 @@ app.get("/payment", (req, res) => {
     res.send("Payment Module Active");
 });
 
-app.get("/health", (req, res) => {
-    res.json({ status: "ok" });
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
 });
 
 app.listen(process.env.PORT, () => {
