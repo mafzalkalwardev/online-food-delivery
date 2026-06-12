@@ -23,7 +23,16 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                bat 'docker run -d -p 5000:3000 --name food-delivery-container food-delivery-app'
+                bat '''
+                docker rm -f food-delivery-container
+                docker run -d -p 5000:3000 --name food-delivery-container food-delivery-app
+                '''
+            }
+        }
+
+        stage('Test Application') {
+            steps {
+                bat 'curl http://localhost:5000/'
             }
         }
     }
