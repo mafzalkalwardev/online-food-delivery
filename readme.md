@@ -2,6 +2,10 @@
 
 A sample Online Food Delivery Web Application developed using Node.js and MongoDB.
 
+## Screenshots
+
+![online-food-delivery dashboard](docs/screenshots/app.png)
+
 ## Features
 - Browse restaurants
 - Place food orders
