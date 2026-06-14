@@ -1,5 +1,5 @@
 {
-  "name": "online-food-delivery",
+  "name": "@mafzalkalwardev/online-food-delivery",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,5 +14,12 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.7.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mafzalkalwardev/online-food-delivery.git"
   }
 }
